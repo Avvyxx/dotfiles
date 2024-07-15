@@ -69,7 +69,15 @@ disabled = false
 style = "bg:color_red fg:color_fg0"
 
 [os.symbols]
-Arch = "󰣇 "
+Arch ="󰣇 "
+Gentoo = ' '
+Ubuntu = ' '
+RockyLinux = ' '
+Fedora = ' '
+Kali = ' '
+Windows = ' '
+Macos = ' '
+
 
 [username]
 show_always = true
