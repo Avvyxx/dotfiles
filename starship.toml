@@ -26,13 +26,13 @@ $fill\
 [](fg:color_bg1)\
 $time\
 $line_break\
-[│](fg:color_bg1)\
+[\\[](fg:color_bg1)\
 $username\
-[├─╢](fg:color_bg1)\
+[\\]-](fg:color_bg1)\
 [λ](fg:color_purple)\
-[╟─┤](fg:color_bg1)\
+[-\\[](fg:color_bg1)\
 $hostname\
-[│](fg:color_bg1)\
+[\\]](fg:color_bg1)\
 $character
 """
 
