@@ -78,6 +78,8 @@ style = "bg:color_orange fg:color_fg0"
 format = "[ $hostname ]($style)"
 
 [directory]
+truncation_length = 0
+truncate_to_repo = false
 style = "fg:color_fg0 bg:color_yellow"
 format = "[ $path ]($style)"
 
