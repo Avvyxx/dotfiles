@@ -37,10 +37,15 @@ $custom\
 
 palette = 'gruvbox_dark'
 
-[custom.symbol]
-command = 'echo $symbol'
+[custom.symbol_not_present]
+when = 'test "$symbol" == ""'
 style = 'fg:color_purple'
-when = true
+format = '[λ]($style)'
+
+[custom.symbol_present]
+command = 'echo $symbol'
+when = 'test "$symbol" != ""'
+style = 'fg:color_purple'
 format = '[$output]($style)'
 
 [palettes.gruvbox_dark]
