@@ -39,153 +39,152 @@ $character
 palette = 'starfield'
 
 [custom.symbol_not_present]
-when = 'test "$symbol" == ""'
-style = 'fg:color_purple'
+when   = 'test "$symbol" == ""'
+style  = 'fg:color_purple'
 format = '[λ]($style)'
 
 [custom.symbol_present]
 command = 'echo $symbol'
-when = 'test "$symbol" != ""'
-style = 'fg:color_purple'
-format = '[$output]($style)'
+when    = 'test "$symbol" != ""'
+style   = 'fg:color_purple'
+format  = '[$output]($style)'
 
 [palettes.starfield]
-color_red1 = '#C72336'
-color_red2 = '#C43B39'
+color_red1    = '#C72336'
+color_red2    = '#C43B39'
 color_orange1 = '#E16136'
 color_orange2 = '#F6723A'
-color_yellow = '#DBA648'
-color_blue1 = '#213150'
-color_blue2 = '#2F4C79'
-color_blue3 = '#4A658E'
-color_blue4 = '#1D313C'
-color_grey1 = '#1D313C'
-color_grey2 = '#5B5F60'
-color_grey3 = '#949995'
-color_grey4 = '#BCC1BC'
-color_purple = '#b16286'
-color_green = '#98971a'
+color_yellow  = '#DBA648'
+color_blue1   = '#213150'
+color_blue2   = '#2F4C79'
+color_blue3   = '#4A658E'
+color_blue4   = '#1D313C'
+color_grey1   = '#1D313C'
+color_grey2   = '#5B5F60'
+color_grey3   = '#949995'
+color_grey4   = '#BCC1BC'
+color_purple  = '#b16286'
+color_green   = '#98971a'
 
 [fill]
 symbol = '─'
-style = 'fg:color_blue3'
+style  = 'fg:color_blue3'
 
 [os]
 disabled = false
-style = "bg:color_red1"
+style    = "bg:color_red1"
 
 [os.symbols]
-Arch ="󰣇 "
-Gentoo = ' '
-Ubuntu = ' '
+Arch       ="󰣇 "
+Gentoo     = ' '
+Ubuntu     = ' '
 RockyLinux = ' '
-Fedora = ' '
-Kali = ' '
-Windows = ' '
-Macos = ' '
-
+Fedora     = ' '
+Kali       = ' '
+Windows    = ' '
+Macos      = ' '
 
 [username]
 show_always = true
-style_user = "fg:#fbf1c7"
-format = "[$user]($style)"
+style_user  = "fg:#fbf1c7"
+format      = "[$user]($style)"
 
 [hostname]
 disabled = false
 ssh_only = false
-style = "bg:color_orange1"
-format = "[ $hostname ]($style)"
+style    = "bg:color_orange1"
+format   = "[ $hostname ]($style)"
 
 [directory]
 truncation_length = 0
-truncate_to_repo = false
-style = "bg:color_yellow"
-format = "[ $path ]($style)"
+truncate_to_repo  = false
+style             = "bg:color_yellow"
+format            = "[ $path ]($style)"
 
 [directory.substitutions]
 "Documents" = "Documents[󰈙]"
 "Downloads" = "Downloads[ ]"
-"Music" = "Music[󰝚]"
-"Pictures" = "Pictures[ ]"
+"Music"     = "Music[󰝚]"
+"Pictures"  = "Pictures[ ]"
 "Developer" = "Developer[󰲋 ]"
 
 [git_branch]
 symbol = ""
-style = "bg:color_blue1"
+style  = "bg:color_blue1"
 format = '[ $symbol $branch ]($style)'
 
 [git_status]
-style = "bg:color_blue1"
+style  = "bg:color_blue1"
 format = '[($all_status$ahead_behind fasdf )]($style)'
 
 [nodejs]
 symbol = ""
-style = "bg:color_blue2"
+style  = "bg:color_blue2"
 format = '[[ $symbol( $version) ](bg:color_blue2)]($style)'
 
 [c]
 symbol = " "
-style = "bg:color_blue2"
+style  = "bg:color_blue2"
 format = '[ $symbol( $version) ]($style)'
 
 [rust]
 symbol = ""
-style = "bg:color_blue2"
+style  = "bg:color_blue2"
 format = '[ $symbol( $version) ]($style)'
 
 [golang]
 symbol = ""
-style = "bg:color_blue2"
+style  = "bg:color_blue2"
 format = '[ $symbol( $version) ]($style)'
 
 [php]
 symbol = ""
-style = "bg:color_blue2"
+style  = "bg:color_blue2"
 format = '[ $symbol( $version) ]($style)'
 
 [java]
 symbol = " "
-style = "bg:color_blue2"
+style  = "bg:color_blue2"
 format = '[ $symbol( $version) ]($style)'
 
 [kotlin]
 symbol = ""
-style = "bg:color_blue2"
+style  = "bg:color_blue2"
 format = '[ $symbol( $version) ]($style)'
 
 [haskell]
 symbol = ""
-style = "bg:color_blue2"
+style  = "bg:color_blue2"
 format = '[ $symbol( $version) ]($style)'
 
 [python]
 symbol = ""
-style = "bg:color_blue2"
+style  = "bg:color_blue2"
 format = '[ $symbol( $version) ]($style)'
 
 [docker_context]
 symbol = ""
-style = "bg:color_blue3"
+style  = "bg:color_blue3"
 format = '[ $symbol( $context) ]($style)'
 
 [conda]
-style = "bg:color_blue3"
+style  = "bg:color_blue3"
 format = '[ $symbol( $environment) ]($style)'
 
 [time]
-disabled = false
+disabled    = false
 time_format = "%R"
-style = "bg:color_blue3"
-format = '[  $time ]($style)'
+style       = "bg:color_blue3"
+format      = '[  $time ]($style)'
 
 [line_break]
 disabled = false
 
 [character]
 disabled = false
-success_symbol = '[](bold fg:color_green)'
-error_symbol = '[](bold fg:color_red2)'
-vimcmd_symbol = '[](bold fg:color_green)'
+success_symbol            = '[](bold fg:color_green)'
+error_symbol              = '[](bold fg:color_red2)'
+vimcmd_symbol             = '[](bold fg:color_green)'
 vimcmd_replace_one_symbol = '[](bold fg:color_purple)'
-vimcmd_replace_symbol = '[](bold fg:color_purple)'
-vimcmd_visual_symbol = '[](bold fg:color_yellow)'
+vimcmd_replace_symbol     = '[](bold fg:color_purple)'
+vimcmd_visual_symbol      = '[](bold fg:color_yellow)'
