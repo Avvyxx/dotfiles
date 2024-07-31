@@ -115,7 +115,7 @@ format = '[ $symbol $branch ]($style)'
 
 [git_status]
 style  = "bg:color_blue1"
-format = '[($all_status$ahead_behind fasdf )]($style)'
+format = '[($all_status$ahead_behind)]($style)'
 
 [nodejs]
 symbol = ""
