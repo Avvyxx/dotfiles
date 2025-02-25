@@ -54,7 +54,7 @@ color_red1    = '#C72336'
 color_red2    = '#C43B39'
 color_orange1 = '#E16136'
 color_orange2 = '#F6723A'
-color_yellow  = '#DBA648'
+color_yellow  = '#d79921'
 color_blue1   = '#213150'
 color_blue2   = '#2F4C79'
 color_blue3   = '#4A658E'
@@ -115,7 +115,7 @@ format = '[ $symbol $branch ]($style)'
 
 [git_status]
 style  = "bg:color_blue1"
-format = '[($all_status$ahead_behind)]($style)'
+format = '[($all_status$ahead_behind) ]($style)'
 
 [nodejs]
 symbol = ""
