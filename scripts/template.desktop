@@ -1,0 +1,6 @@
+[Desktop Entry]
+Comment=
+Exec=$EXEC_PATH
+Name=$NAME
+Terminal=false
+Type=Application
